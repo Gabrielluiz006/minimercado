@@ -40,7 +40,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow" role="navigation" aria-label="Menu principal">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Minimercado Coqueirais</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -52,31 +52,47 @@
           <a class="nav-link" href="index.html">Início</a>
           <a class="nav-link" href="produtos.html">Produtos</a>
           <a class="nav-link" href="servicos.html">Serviços</a>
-          <a class="nav-link active" href="contato.html">Contato</a>
+          <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <main class="container">
+  <main class="container" role="main">
     <div class="text-center mb-5">
-      <h2 class="fw-bold">Entre em Contato</h2>
-      <p class="text-muted">Estamos prontos para atender você!</p>
+      <h1 class="fw-bold" id="titulo-contato">Entre em Contato</h1>
+      <p class="text-muted" id="descricao-contato">Estamos prontos para atender você!</p>
     </div>
 
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <div class="contact-card">
-          <p><i class="bi bi-envelope contact-icon"></i><strong>Email:</strong> minimercadocoqueirais@gmail.com</p>
-          <p><i class="bi bi-telephone contact-icon"></i><strong>Telefone:</strong> (11) 1234-5678</p>
-          <p><i class="bi bi-geo-alt contact-icon"></i><strong>Endereço:</strong> Rua dos Coqueirais, 123 - Candeias</p>
-        </div>
+        <section class="contact-card" aria-labelledby="titulo-contato" aria-describedby="descricao-contato">
+          <p>
+            <i class="bi bi-envelope contact-icon" aria-hidden="true"></i>
+            <strong>Email:</strong>
+            <a href="mailto:minimercadocoqueirais@gmail.com" aria-label="Enviar e-mail para Minimercado Coqueirais">
+              minimercadocoqueirais@gmail.com
+            </a>
+          </p>
+          <p>
+            <i class="bi bi-telephone contact-icon" aria-hidden="true"></i>
+            <strong>Telefone:</strong>
+            <a href="tel:+551112345678" aria-label="Ligar para Minimercado Coqueirais">
+              (11) 1234-5678
+            </a>
+          </p>
+          <p>
+            <i class="bi bi-geo-alt contact-icon" aria-hidden="true"></i>
+            <strong>Endereço:</strong>
+            <span>Rua dos Coqueirais, 123 - Candeias</span>
+          </p>
+        </section>
       </div>
     </div>
   </main>
 
-  <footer>
-    <p>© 2025 Minimercado Coqueirais | minimercadocoqueirais@gmail.com</p>
+  <footer role="contentinfo">
+    <p>© 2025 Minimercado Coqueirais | <a href="mailto:minimercadocoqueirais@gmail.com">minimercadocoqueirais@gmail.com</a></p>
   </footer>
 </body>
 

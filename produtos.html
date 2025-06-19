@@ -52,7 +52,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow" role="navigation" aria-label="Menu principal">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Minimercado Coqueirais</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -62,74 +62,82 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
           <a class="nav-link" href="index.html">Início</a>
-          <a class="nav-link" href="produtos.html">Produtos</a>
-          <a class="nav-link active" aria-current="page" href="servicos.html">Serviços</a>
+          <a class="nav-link active" aria-current="page" href="produtos.html">Produtos</a>
+          <a class="nav-link" href="servicos.html">Serviços</a>
           <a class="nav-link" href="contato.html">Contato</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <main class="container text-center my-5">
-    <h2>Produtos</h2>
+  <main class="container text-center my-5" role="main">
+    <h2 id="titulo-produtos">Produtos</h2>
 
-    <h3>Hortifrúti</h3>
-    <div class="row justify-content-center g-4">
+    <h3 id="categoria-horti">Hortifrúti</h3>
+    <div class="row justify-content-center g-4" aria-labelledby="categoria-horti">
       <div class="col-md-3 col-sm-6">
-        <div class="product-card">
-          <img src="https://jpimg.com.br/uploads/2025/02/conheca-os-beneficios-do-tomate-para-a-saude.jpg" alt="Tomate">
+        <article class="product-card" role="group" aria-label="Tomate, R$ 5,00 por quilo">
+          <img src="https://jpimg.com.br/uploads/2025/02/conheca-os-beneficios-do-tomate-para-a-saude.jpg"
+            alt="Imagem de tomate fresco vermelho">
           <h5>Tomate</h5>
           <p class="text-muted">R$ 5,00 / kg</p>
-        </div>
+        </article>
       </div>
       <div class="col-md-3 col-sm-6">
-        <div class="product-card">
-          <img src="https://trela.com.br/_next/image?url=https%3A%2F%2Fprod-zapt-images.s3.sa-east-1.amazonaws.com%2Fproducts%2Fe68246db-30a0-442d-975c-42b5514c0668.png&w=3840&q=75" alt="Alface">
+        <article class="product-card" role="group" aria-label="Alface, R$ 2,00 por unidade">
+          <img src="https://trela.com.br/_next/image?url=https%3A%2F%2Fprod-zapt-images.s3.sa-east-1.amazonaws.com%2Fproducts%2Fe68246db-30a0-442d-975c-42b5514c0668.png&w=3840&q=75"
+            alt="Imagem de alface crespa verde">
           <h5>Alface</h5>
           <p class="text-muted">R$ 2,00 / unidade</p>
-        </div>
+        </article>
       </div>
     </div>
 
-    <h3>Açougue</h3>
-    <div class="row justify-content-center g-4">
+    <h3 id="categoria-acougue">Açougue</h3>
+    <div class="row justify-content-center g-4" aria-labelledby="categoria-acougue">
       <div class="col-md-3 col-sm-6">
-        <div class="product-card">
-          <img src="https://www.comprerural.com/wp-content/uploads/2017/12/carne-bovina-41.jpg" alt="Carne Bovina">
+        <article class="product-card" role="group" aria-label="Carne bovina, R$ 35,00 por quilo">
+          <img src="https://www.comprerural.com/wp-content/uploads/2017/12/carne-bovina-41.jpg"
+            alt="Imagem de carne bovina vermelha crua">
           <h5>Carne Bovina</h5>
           <p class="text-muted">R$ 35,00 / kg</p>
-        </div>
+        </article>
       </div>
       <div class="col-md-3 col-sm-6">
-        <div class="product-card">
-          <img src="https://www.hortifruti.com.br/_next/image?url=https%3A%2F%2Fhortifrutibr.vtexassets.com%2Farquivos%2Fids%2F159705%2FLinguica-Toscana-Resfriada-Seara-600g.jpg%3Fv%3D638671093507930000&w=1440&q=75" alt="Linguiça">
+        <article class="product-card" role="group" aria-label="Linguiça toscana, R$ 18,00 por quilo">
+          <img src="https://www.hortifruti.com.br/_next/image?url=https%3A%2F%2Fhortifrutibr.vtexassets.com%2Farquivos%2Fids%2F159705%2FLinguica-Toscana-Resfriada-Seara-600g.jpg%3Fv%3D638671093507930000&w=1440&q=75"
+            alt="Imagem de linguiça toscana embalada">
           <h5>Linguiça Toscana</h5>
           <p class="text-muted">R$ 18,00 / kg</p>
-        </div>
+        </article>
       </div>
     </div>
 
-    <h3>Limpeza</h3>
-    <div class="row justify-content-center g-4">
+    <h3 id="categoria-limpeza">Limpeza</h3>
+    <div class="row justify-content-center g-4" aria-labelledby="categoria-limpeza">
       <div class="col-md-3 col-sm-6">
-        <div class="product-card">
-          <img src="https://www.brilhante.com.br/images/h0nadbhvm6m4/20jpD7nkSRs3lHhaOHkxJv/02b8877850b00c0f67d9a962a39251af/NS5wbmc/1080w-1080h/sab%C3%A3o-em-p%C3%B3-brilhante-cuidado-total.jpg" alt="Sabão em pó">
+        <article class="product-card" role="group" aria-label="Sabão em pó, R$ 10,00">
+          <img src="https://www.brilhante.com.br/images/h0nadbhvm6m4/20jpD7nkSRs3lHhaOHkxJv/02b8877850b00c0f67d9a962a39251af/NS5wbmc/1080w-1080h/sab%C3%A3o-em-p%C3%B3-brilhante-cuidado-total.jpg"
+            alt="Imagem da embalagem do sabão em pó Brilhante">
           <h5>Sabão em pó</h5>
           <p class="text-muted">R$ 10,00</p>
-        </div>
+        </article>
       </div>
       <div class="col-md-3 col-sm-6">
-        <div class="product-card">
-          <img src="https://cdn.awsli.com.br/600x1000/446/446822/produto/19375032/b55beb3d542c24fecee441c2adae4c16-1enuxj82ng.jpg" alt="Desinfetante">
+        <article class="product-card" role="group" aria-label="Desinfetante, R$ 7,00">
+          <img src="https://cdn.awsli.com.br/600x1000/446/446822/produto/19375032/b55beb3d542c24fecee441c2adae4c16-1enuxj82ng.jpg"
+            alt="Imagem da embalagem de desinfetante verde">
           <h5>Desinfetante</h5>
           <p class="text-muted">R$ 7,00</p>
-        </div>
+        </article>
       </div>
     </div>
   </main>
 
-  <footer>
-    <p class="text-center text-muted my-4">© 2025 Minimercado Coqueirais | minimercadocoqueirais@gmail.com</p>
+  <footer role="contentinfo">
+    <p class="text-center text-muted my-4">© 2025 Minimercado Coqueirais |
+      <a href="mailto:minimercadocoqueirais@gmail.com">minimercadocoqueirais@gmail.com</a>
+    </p>
   </footer>
 </body>
 
