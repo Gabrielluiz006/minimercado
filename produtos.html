@@ -2,39 +2,135 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Produtos - Minimercado Coqueirais</title>
+  <meta charset="UTF-8">
+  <title>Produtos - Minimercado Coqueirais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      margin-top: 40px;
+      color: #343a40;
+    }
+
+    .product-card {
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-card img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+      color: #555;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>Minimercado Coqueirais</h1>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Produtos</h2>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Minimercado Coqueirais</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="index.html">Início</a>
+          <a class="nav-link" href="produtos.html">Produtos</a>
+          <a class="nav-link active" aria-current="page" href="servicos.html">Serviços</a>
+          <a class="nav-link" href="contato.html">Contato</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-        <h3>Hortifrúti</h3>
-        <p>
-            <img src="https://jpimg.com.br/uploads/2025/02/conheca-os-beneficios-do-tomate-para-a-saude.jpg" alt="Tomate" width="100"><br>Tomate - R$ 5,00/kg</p>
-        <p><img src="https://trela.com.br/_next/image?url=https%3A%2F%2Fprod-zapt-images.s3.sa-east-1.amazonaws.com%2Fproducts%2Fe68246db-30a0-442d-975c-42b5514c0668.png&w=3840&q=75" alt="Alface" width="100"><br> Alface - R$ 2,00/unidade</p>
+  <main class="container text-center my-5">
+    <h2>Produtos</h2>
 
-        <h3>Açougue</h3>
-        <p><img src="https://www.comprerural.com/wp-content/uploads/2017/12/carne-bovina-41.jpg" alt="Carne Bovina" width="100"><br> Carne Bovina - R$ 35,00/kg</p>
-        <p><img src="https://www.hortifruti.com.br/_next/image?url=https%3A%2F%2Fhortifrutibr.vtexassets.com%2Farquivos%2Fids%2F159705%2FLinguica-Toscana-Resfriada-Seara-600g.jpg%3Fv%3D638671093507930000&w=1440&q=75" alt="Linguiça" width="100"><br> Linguiça - R$ 18,00/kg</p>
+    <h3>Hortifrúti</h3>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="https://jpimg.com.br/uploads/2025/02/conheca-os-beneficios-do-tomate-para-a-saude.jpg" alt="Tomate">
+          <h5>Tomate</h5>
+          <p class="text-muted">R$ 5,00 / kg</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="https://trela.com.br/_next/image?url=https%3A%2F%2Fprod-zapt-images.s3.sa-east-1.amazonaws.com%2Fproducts%2Fe68246db-30a0-442d-975c-42b5514c0668.png&w=3840&q=75" alt="Alface">
+          <h5>Alface</h5>
+          <p class="text-muted">R$ 2,00 / unidade</p>
+        </div>
+      </div>
+    </div>
 
-        <h3>Limpeza</h3>
-        <p><img src="https://www.brilhante.com.br/images/h0nadbhvm6m4/20jpD7nkSRs3lHhaOHkxJv/02b8877850b00c0f67d9a962a39251af/NS5wbmc/1080w-1080h/sab%C3%A3o-em-p%C3%B3-brilhante-cuidado-total.jpg" alt="Sabão em pó" width="100"><br> Sabão em pó - R$ 10,00</p>
-        <p><img src="https://cdn.awsli.com.br/600x1000/446/446822/produto/19375032/b55beb3d542c24fecee441c2adae4c16-1enuxj82ng.jpg" alt="Desinfetante" width="100"><br> Desinfetante - R$ 7,00</p>
-    </main>
-    <footer>
-        <p>© 2025 Minimercado Coqueirais | minimercadocoqueirais@gmail.com</p>
-    </footer>
+    <h3>Açougue</h3>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="https://www.comprerural.com/wp-content/uploads/2017/12/carne-bovina-41.jpg" alt="Carne Bovina">
+          <h5>Carne Bovina</h5>
+          <p class="text-muted">R$ 35,00 / kg</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="https://www.hortifruti.com.br/_next/image?url=https%3A%2F%2Fhortifrutibr.vtexassets.com%2Farquivos%2Fids%2F159705%2FLinguica-Toscana-Resfriada-Seara-600g.jpg%3Fv%3D638671093507930000&w=1440&q=75" alt="Linguiça">
+          <h5>Linguiça Toscana</h5>
+          <p class="text-muted">R$ 18,00 / kg</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Limpeza</h3>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="https://www.brilhante.com.br/images/h0nadbhvm6m4/20jpD7nkSRs3lHhaOHkxJv/02b8877850b00c0f67d9a962a39251af/NS5wbmc/1080w-1080h/sab%C3%A3o-em-p%C3%B3-brilhante-cuidado-total.jpg" alt="Sabão em pó">
+          <h5>Sabão em pó</h5>
+          <p class="text-muted">R$ 10,00</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="https://cdn.awsli.com.br/600x1000/446/446822/produto/19375032/b55beb3d542c24fecee441c2adae4c16-1enuxj82ng.jpg" alt="Desinfetante">
+          <h5>Desinfetante</h5>
+          <p class="text-muted">R$ 7,00</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="text-center text-muted my-4">© 2025 Minimercado Coqueirais | minimercadocoqueirais@gmail.com</p>
+  </footer>
 </body>
 
 </html>
